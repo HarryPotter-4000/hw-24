@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color: #15202b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+select,
+option {
+  color: #15202b;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #d2d9e7;
+  border-radius: 5px;
+  resize: none;
+  background-color: #f5f8fd;
+}
+
+.post-new {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.post-new input,
+.post-new textarea,
+.post-new button {
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #d2d9e7;
+  border-radius: 5px;
+  resize: none;
+  background-color: #f5f8fd;
+}
+
+.post-new button {
+  background-color: #d2d9e7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.post-new button:hover {
+  background-color: #fff;
+}
+
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+}
+
+.post-item {
+  border: 1px solid #d2d9e7;
+  background-color: #f5f8fd;
+  padding: 10px 15px;
+  margin: 20px;
+  width: 260px;
+  border-radius: 10px;
+}
+
+.post-item h4 {
+  color: #424f6a;
+}
+
+.post-item p {
+  color: #424f6a;
+  font-size: 14px;
+}
+
+.active {
+  color: #f80044;
 }
